@@ -47,7 +47,7 @@ export const Particles: React.FC<ParticlesProps> = ({
     return () => {
       window.removeEventListener("resize", initCanvas);
     };
-  }, []);
+  });
 
   useEffect(() => {
     onMouseMove();
